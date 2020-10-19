@@ -1,1 +1,1 @@
-This repository contains all the reasearch papers related to our project.
+This repository contains all the research papers related to our project.
