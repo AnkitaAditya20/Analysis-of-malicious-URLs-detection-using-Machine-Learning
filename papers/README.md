@@ -1,1 +1,1 @@
-This repository contains all the research papers related to our project.
+This folder contains all the research papers related to our project.
