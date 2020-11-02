@@ -1,13 +1,12 @@
 # Tasks to be done
 
 ## SYNOPSIS:
-> 1) Literature Survey - 5 papers to be read 
-> 2) Abstract
-> 3) Introduction
-> 4) Methodology 
-> 5) Architecture and flow chart
+> 1) Literature Survey - 5 papers to be read:heavy_check_mark: 
+> 2) Abstract:heavy_check_mark:
+> 3) Introduction:heavy_check_mark:
+> 4) Methodology :heavy_check_mark:
+> 5) Architecture and flow chart :heavy_check_mark:
 
---------------------DONE----------------------------
 
 ## IMPLEMENTATION:
 
