@@ -6,6 +6,7 @@
 > 3) Introduction
 > 4) Methodology 
 > 5) Architecture and flow chart
+--------------------DONE----------------------------
 
 ## IMPLEMENTATION:
 
