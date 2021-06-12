@@ -27,8 +27,8 @@ def processing(url):
     return finaltest 
 
 
-rfc = joblib.load("randomforestfinal.pkl")
-vectorizer = joblib.load("vectorizer.pkl")
+rfc = joblib.load("tfidfModel.pkl")
+vectorizer = joblib.load("tfidfvectorizer.pkl")
 testapi = vectorizer.transform(["https://web.whatsapp.com"])
 n = p.feature_processing("https://web.whatsapp.com")
 n = sp.sparse.csr_matrix(n)

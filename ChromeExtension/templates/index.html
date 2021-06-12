@@ -146,15 +146,15 @@ margin-top: 33px;
     
 
 <div class="jumbotron"> 
-    <h1 class="display-4" align = 'center'>MalTracker - AI Based Malicious Webpage Detector</h1>
+    <h1 class="display-4" align = 'center'>Detection of benign and malicious URLs</h1>
     <p class="lead" align='center'>It is a malicious webpage detector which uses a machine learning approach to provide security against the malicious URLs</p>
 </div>
 
   <div class="container-fluid">
     <h2 for="websitetxt" id='webname' align='center'>Enter Your Website</h2>
                 <input placeholder="Type Full Website url" type="text" class="form-control" id="websitetxt">
-            <button align = 'center' type="submit" onclick="detect()" class="btn btn-dark">Detect</button>
-            </div>
+           <div align="center"> <button align = 'center' type="submit" onclick="detect()" class="btn btn-dark">Detect</button></div>
+        </div>
             <div id="output">
         </div>
 
@@ -167,16 +167,7 @@ margin-top: 33px;
 
     </section>
 -->
-    <div class="jumbotron jumbotron-fluid">
-        <ol class="list-group list-group-flush">
-            <li class="list-group-item"><a href="#">Siddhart Kumar - Machine Learning</a></li>
-            <li class="list-group-item"><a href="#">Puneet - Backend Developer</a></li>
-            <li class="list-group-item"><a href="#">Jagdeep - Visualization</a></li>
-            <li class="list-group-item"><a href="#">Diskha - Visualization</a></li>
-            <li class="list-group-item"><a href="#">Saksham Kaul - Machine Learning</a></li>
-            <li class="list-group-item"><a href="#">Asif - Backend Developer</a></li>
-        </ol>
-    </div>
+   
 
     <script>
         function detect() {
@@ -191,7 +182,7 @@ margin-top: 33px;
                         $('#output').html(
                             "<h1 style='margin-top: 20px;color:#ff9797;background: black;padding: 10px;'>Malicious-" +
                             url + "</h1>");
-
+                        
                     } else {
                         $('#output').html(
                             "<h1 style='margin-top: 20px;color:#3cff3c;background: black;padding: 10px;'>Safe - " +

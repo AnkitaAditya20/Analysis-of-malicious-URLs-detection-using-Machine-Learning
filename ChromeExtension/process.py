@@ -4,7 +4,8 @@ from urllib.parse import urlparse
 from tld import get_tld
 import os.path
 import re
-from sklearn.externals import joblib
+import sklearn.externals
+import joblib
 import scipy as sp
 import pickle as p
 from scipy.sparse import hstack
@@ -93,9 +94,8 @@ def feature_processing(url):
        'count%', 'count.', 'count=', 'count-www', 'count-digits',
        'count-letters', 'count_dir', 'use_of_ip', 'short_url'
     """    
-    test_array = np.append(test_array,[url_length,hostname_length,path_length,fd_length,tld_length,countdash,countat,countquestion,
-                                       countpercent,
-                                       countdot,countequal,count_www,count_digits,count_letters,count_directory,
+    test_array = np.append(test_array,[url_length,hostname_length,path_length,fd_length,tld_length,countat,countquestion,
+                                       countpercent,countequal,count_http,count_digits,count_letters,count_directory,
                                       use_of_ip,short_url])
     test_array = test_array.reshape(1,-1)
     return test_array
