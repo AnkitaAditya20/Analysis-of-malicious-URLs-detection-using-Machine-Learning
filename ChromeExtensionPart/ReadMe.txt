@@ -12,19 +12,3 @@ Instructions To Use Our ML Enabled Chrome Extension.
 
 Thank You
 
-DEVELOPERS
-Siddharth Kumar - https://github.com/siddharthkumar25
-		  https://www.linkedin.com/in/siddharthkumar25
-
-Saksham Kaul    - https://github.com/sakshamkaul
-                  https://www.linkedin.com/in/sakshamkaul
-
-Puneet Pandey   - https://github.com/ebuddiess
-                  https://www.linkedin.com/in/ebuddiess
-
-Jagdeep Singh   - https://www.linkedin.com/in/jagdeepsingh31
-
-Mohd. Asif      - https://github.com/cecildot7
-		  https://www.linkedin.com/in/techieasif
-
-Diksha Arora    - https://www.linkedin.com/in/diksha-arora-aa774a128
