@@ -1,12 +1,15 @@
 from flask import Flask, request, jsonify , render_template
 import pickle
 import  process as p
-from sklearn.externals import joblib
+import sklearn.externals
+import joblib
 import scipy as sp
 from scipy.sparse import hstack
+import sys
+sys.modules['sklearn.externals.joblib'] = joblib
 
 app = Flask(__name__)
-rfc = joblib.load("randomforestfinal.pkl")
+rfc = joblib.load("tfidfModel.pkl")
 
 def processing(url):
     
@@ -22,7 +25,7 @@ def processing(url):
     finaltest = list(set(total_Tokens))#remove redundant tokens
     return finaltest 
 
-vectorizer = joblib.load("vectorizer.pkl")
+vectorizer = joblib.load("tfidfvectorizer.pkl")
 
 @app.route('/',methods=['GET'])
 def main():
@@ -31,10 +34,10 @@ def main():
 @app.route('/api',methods=['GET'])
 def predict():
     params = request.args.get('url')
-    testapi = vectorizer.transform([params])
+    z = vectorizer.transform([params])
     n = p.feature_processing(params)
     n = sp.sparse.csr_matrix(n)
-    t = hstack([testapi,n])
+    t = hstack([z,n])
     data = rfc.predict(t);
     return  jsonify(status=(data[0]))
 

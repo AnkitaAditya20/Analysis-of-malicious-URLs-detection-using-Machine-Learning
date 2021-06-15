@@ -3,7 +3,8 @@ window.onload = function ()
     chrome.storage.local.get(['keyurl', 'keystatus'], function (result) {
         console.log(result.keyurl)
         console.log(result.keystatus)
-        document.querySelector(".webname").textContent = result.keyurl
+	var element = document.querySelector(".webname")
+        element.textContent = result.keyurl
         if (result.keystatus == "benign") {
             status = "Safe"
             document.querySelector(".webstatus").textContent = status
