@@ -29,11 +29,12 @@ vectorizer = joblib.load("tfidfvectorizer.pkl")
 
 @app.route('/',methods=['GET'])
 def main():
-    return render_template('index.html',websitename="Maltracker");
+    return render_template('index.html',websitename="Malicious Url Detector");
 
 @app.route('/api',methods=['GET'])
 def predict():
     params = request.args.get('url')
+    print('params: ', params)
     z = vectorizer.transform([params])
     n = p.feature_processing(params)
     n = sp.sparse.csr_matrix(n)
