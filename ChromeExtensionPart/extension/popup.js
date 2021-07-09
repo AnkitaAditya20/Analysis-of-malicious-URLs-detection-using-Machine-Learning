@@ -15,12 +15,3 @@ window.onload = function ()
         }
     });
 }
-
-/*
-document.querySelectorAll(".devlink").forEach(function(a){
- a.onclick = function(){
-    chrome.tabs.create({url:a.href});
- }
-})
-
-*/
